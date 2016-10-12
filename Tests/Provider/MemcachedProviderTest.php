@@ -145,7 +145,7 @@ class MemcachedProviderTest extends WebTestCase {
 			[ 'buffer_writes'       , \Memcached::OPT_BUFFER_WRITES        ], [ 'sort_hosts'            , \Memcached::OPT_SORT_HOSTS             ],
 			[ 'binary_protocol'     , \Memcached::OPT_BINARY_PROTOCOL      ], [ 'verify_key'            , \Memcached::OPT_VERIFY_KEY             ],
 			[ 'no_block'            , \Memcached::OPT_NO_BLOCK             ], 
-			[ 'tcp_nodelay'         , \Memcached::OPT_TCP_NODELAY          ], [ 'number_of_replicas'    , \Memcached::OPT_NUMBER_OF_REPLICAS     ],
+			[ 'tcp_nodelay'         , \Memcached::OPT_TCP_NODELAY          ], 
 			[ 'socket_send_size'    , \Memcached::OPT_SOCKET_SEND_SIZE     ], [ 'randomize_replica_read', \Memcached::OPT_RANDOMIZE_REPLICA_READ ],
 			[ 'socket_recv_size'    , \Memcached::OPT_SOCKET_RECV_SIZE     ], [ 'remove_failed_servers' , \Memcached::OPT_REMOVE_FAILED_SERVERS  ],
 		];
