@@ -1,0 +1,8 @@
+parameters:
+    gsf_cache.simpleserializer_class: GollumSF\CacheBundle\Serializer\SimpleSerializer
+    
+services:
+    
+    gsf_cache.simple_serializer:
+        class: '%gsf_cache.simpleserializer_class%'
+    

@@ -1,0 +1,34 @@
+{
+	"name" : "gollumsf/cache-bundle",
+	"type" : "symfony-bundle",
+	"description" : "Add very simple cache service for (File, Apc, Apcu, Memcached, Redis...)",
+	"keywords" : [
+		"cache",
+		"apc",
+		"apcu",
+		"memcached",
+		"redis"
+	],
+	"homepage" : "https://github.com/GollumSF/cache-bundle",
+	"license" : "GPLv3",
+	"authors" : [{
+			"name" : "Damien Duboeuf",
+			"email" : "smeagolworms4@gmail.com"
+		}
+	],
+	"support" : {
+		"email" : "smeagolworms4@gmail.com",
+		"wiki" : "https://github.com/GollumSF/user-bundle/blob/master/README.md"
+	},
+	"minimum-stability": "dev",
+	"require" : {
+		"php" : ">=5.5",
+		"symfony/framework-bundle" : ">=2.7"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"GollumSF\\CacheBundle" : ""
+		}
+	},
+	"target-dir" : "GollumSF/CacheBundle"
+}
