@@ -183,7 +183,7 @@ class MemcachedProviderTest extends WebTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Provider\MemcachedProvider::convertaddServers
+	 * @covers GollumSF\CacheBundle\Provider\MemcachedProvider::addServers
 	 * @dataProvider provideAddServers
 	 */
 	public function testAddServers($options, $result) {
