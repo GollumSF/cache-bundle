@@ -161,7 +161,7 @@ class MemcachedProviderTest extends WebTestCase {
 						]
 					],
 					'compression'      => 1,
-					'compression_type' => 2,
+					'retry_timeout'    => false,
 					'username'         => 'username',
 					'password'         => 'password',
 				],
@@ -169,8 +169,8 @@ class MemcachedProviderTest extends WebTestCase {
 				'username',
 				'password',
 				[
-					\Memcached::OPT_COMPRESSION      => 1,
-					\Memcached::OPT_COMPRESSION_TYPE => 2,
+					\Memcached::OPT_COMPRESSION   => 1,
+					\Memcached::OPT_RETRY_TIMEOUT => false,
 				]
 			]
 		];
