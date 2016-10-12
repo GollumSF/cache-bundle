@@ -150,7 +150,6 @@ class MemcachedProviderTest extends WebTestCase {
 			[ 'tcp_nodelay'         , \Memcached::OPT_TCP_NODELAY          ], [ 'number_of_replicas'    , \Memcached::OPT_NUMBER_OF_REPLICAS     ],
 			[ 'socket_send_size'    , \Memcached::OPT_SOCKET_SEND_SIZE     ], [ 'randomize_replica_read', \Memcached::OPT_RANDOMIZE_REPLICA_READ ],
 			[ 'socket_recv_size'    , \Memcached::OPT_SOCKET_RECV_SIZE     ], [ 'remove_failed_servers' , \Memcached::OPT_REMOVE_FAILED_SERVERS  ],
-			,
 		];
 		
 	}
