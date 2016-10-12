@@ -136,7 +136,7 @@ class MemcachedProviderTest extends WebTestCase {
 	public function provideConvertMemcachedOption() {
 		return [
 			[ 'compression'         , \Memcached::OPT_COMPRESSION          ], [ 'retry_timeout'         , \Memcached::OPT_RETRY_TIMEOUT          ],
-			[ 'compression_type'    , \Memcached::OPT_COMPRESSION_TYPE     ], [ 'send_timeout'          , \Memcached::OPT_SEND_TIMEOUT           ],
+			[ 'connect_timeout'     , \Memcached::OPT_CONNECT_TIMEOUT      ], [ 'send_timeout'          , \Memcached::OPT_SEND_TIMEOUT           ],
 			[ 'prefix_key'          , \Memcached::OPT_PREFIX_KEY           ], [ 'recv_timeout'          , \Memcached::OPT_RECV_TIMEOUT           ],
 			[ 'serializer'          , \Memcached::OPT_SERIALIZER           ], [ 'poll_timeout'          , \Memcached::OPT_POLL_TIMEOUT           ],
 			[ 'hash'                , \Memcached::OPT_HASH                 ], [ 'cache_lookups'         , \Memcached::OPT_CACHE_LOOKUPS          ],
@@ -150,7 +150,7 @@ class MemcachedProviderTest extends WebTestCase {
 			[ 'tcp_nodelay'         , \Memcached::OPT_TCP_NODELAY          ], [ 'number_of_replicas'    , \Memcached::OPT_NUMBER_OF_REPLICAS     ],
 			[ 'socket_send_size'    , \Memcached::OPT_SOCKET_SEND_SIZE     ], [ 'randomize_replica_read', \Memcached::OPT_RANDOMIZE_REPLICA_READ ],
 			[ 'socket_recv_size'    , \Memcached::OPT_SOCKET_RECV_SIZE     ], [ 'remove_failed_servers' , \Memcached::OPT_REMOVE_FAILED_SERVERS  ],
-			[ 'connect_timeout'     , \Memcached::OPT_CONNECT_TIMEOUT      ],
+			,
 		];
 		
 	}
