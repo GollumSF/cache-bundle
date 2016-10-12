@@ -38,3 +38,11 @@ gollum_sf_cache:
     
 ```
 
+## Usages:
+
+```php
+$cache = $container->get('gsf_cache.cache')
+$cache->set('key', 'Hello World');
+echo $cache->get('key'); // Display: Hello World
+```
+

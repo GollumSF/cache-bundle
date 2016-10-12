@@ -162,7 +162,7 @@ class MemcachedCacheTest extends CacheTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Cache\MemcachedCache::delete
+	 * @covers GollumSF\CacheBundle\Cache\MemcachedCache::getKeys
 	 * @dataProvider provideKeys
 	 * @depends testSet
 	 * @depends testHas

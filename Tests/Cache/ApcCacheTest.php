@@ -104,7 +104,7 @@ class ApcCacheTest extends CacheTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Cache\ApcCache::delete
+	 * @covers GollumSF\CacheBundle\Cache\ApcCache::getKeys
 	 * @dataProvider provideKeys
 	 * @depends testSet
 	 * @depends testHas

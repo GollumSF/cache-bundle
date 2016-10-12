@@ -101,7 +101,7 @@ class FileCacheTest extends CacheTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Cache\FileCache::delete
+	 * @covers GollumSF\CacheBundle\Cache\FileCache::getKeys
 	 * @dataProvider provideKeys
 	 * @depends testSet
 	 * @depends testHas

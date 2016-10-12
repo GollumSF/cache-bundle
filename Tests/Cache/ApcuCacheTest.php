@@ -104,7 +104,7 @@ class ApcuCacheTest extends CacheTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Cache\ApcuCache::delete
+	 * @covers GollumSF\CacheBundle\Cache\ApcuCache::getKeys
 	 * @dataProvider provideKeys
 	 * @depends testHas
 	 * @depends testNotHas
@@ -124,6 +124,7 @@ class ApcuCacheTest extends CacheTestCase {
 	}
 	
 	/**
+	 * @covers GollumSF\CacheBundle\Cache\ApcuCache::getFinalKey
 	 * @dataProvider provide
 	 */
 	public function testGetFinalKey($key) {
