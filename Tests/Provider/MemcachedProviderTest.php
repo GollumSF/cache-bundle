@@ -141,7 +141,7 @@ class MemcachedProviderTest extends WebTestCase {
 			[ 'serializer'          , \Memcached::OPT_SERIALIZER           ], [ 'poll_timeout'          , \Memcached::OPT_POLL_TIMEOUT           ],
 			[ 'hash'                , \Memcached::OPT_HASH                 ], [ 'cache_lookups'         , \Memcached::OPT_CACHE_LOOKUPS          ],
 			[ 'distribution'        , \Memcached::OPT_DISTRIBUTION         ], [ 'server_failure_limit'  , \Memcached::OPT_SERVER_FAILURE_LIMIT   ],
-			[ 'libketama_compatible', \Memcached::OPT_LIBKETAMA_COMPATIBLE ], [ 'noreply'               , \Memcached::OPT_NOREPLY                ],
+			[ 'libketama_compatible', \Memcached::OPT_LIBKETAMA_COMPATIBLE ], 
 			[ 'buffer_writes'       , \Memcached::OPT_BUFFER_WRITES        ], [ 'sort_hosts'            , \Memcached::OPT_SORT_HOSTS             ],
 			[ 'binary_protocol'     , \Memcached::OPT_BINARY_PROTOCOL      ], [ 'verify_key'            , \Memcached::OPT_VERIFY_KEY             ],
 			[ 'no_block'            , \Memcached::OPT_NO_BLOCK             ], [ 'use_udp'               , \Memcached::OPT_USE_UDP                ],
