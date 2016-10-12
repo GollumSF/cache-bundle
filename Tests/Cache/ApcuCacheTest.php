@@ -84,7 +84,7 @@ class ApcuCacheTest extends CacheTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Cac                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                he\ApcuCache::has
+	 * @covers GollumSF\CacheBundle\Cache\ApcuCache::has                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           he\ApcuCache::has
 	 * @dataProvider provide
 	 * @depends testSet
 	 */

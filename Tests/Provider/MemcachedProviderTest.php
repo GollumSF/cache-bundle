@@ -183,7 +183,7 @@ class MemcachedProviderTest extends WebTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Provider\MemcachedProvider::convertMemcachedOption
+	 * @covers GollumSF\CacheBundle\Provider\MemcachedProvider::convertaddServers
 	 * @dataProvider provideAddServers
 	 */
 	public function testAddServers($options, $result) {
@@ -200,7 +200,7 @@ class MemcachedProviderTest extends WebTestCase {
 	}
 	
 	/**
-	 * @covers GollumSF\CacheBundle\Provider\MemcachedProvider::convertMemcachedOption
+	 * @covers GollumSF\CacheBundle\Provider\MemcachedProvider::authentification
 	 * @dataProvider provideAuthentification
 	 */
 	public function testAuthentification($options, $username, $password) {
@@ -227,6 +227,19 @@ class MemcachedProviderTest extends WebTestCase {
 		$method = $rClass->getMethod('convertMemcachedOption');
 		$method->setAccessible(true);
 		$this->assertEquals($method->invoke($memcachedProvider, $option), $result);
+	}
+	
+	/**
+	 * @covers GollumSF\CacheBundle\Provider\MemcachedProvider::convertMemcachedOption
+	 * @dataProvider provideConvertMemcachedOption
+	 * @expectedException GollumSF\CacheBundle\Exception\MemcachedOptionException
+	 */
+	public function testConvertMemcachedOptionException($option, $result) {
+		$memcachedProvider = new MemcachedProvider(MemcachedDummy::class);
+		$rClass = new \ReflectionClass($memcachedProvider);
+		$method = $rClass->getMethod('convertMemcachedOption');
+		$method->setAccessible(true);
+		$method->invoke($memcachedProvider, NULL);
 	}
 	
 	/**

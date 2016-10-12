@@ -91,7 +91,7 @@ class MemcachedProvider implements MemcachedProviderInterface {
 	 * @throws MemcachedOptionException
 	 */
 	protected function convertMemcachedOption($strOpt) {
-		$option =  constant('\Memcached::OPT_'.strtoupper($strOpt));
+		$option =  @constant('\Memcached::OPT_'.strtoupper($strOpt));
 		if ($option === NULL) {
 			throw new MemcachedOptionException(sprintf('The option %s not exist in memcached', $strOpt));
 		}
